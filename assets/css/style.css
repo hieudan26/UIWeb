@@ -1622,7 +1622,7 @@ body.offcanvas-open {
   background-color: #252525;
   color: #fff;
   line-height: 1;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 .newsletter-area .newsletter-content {
   display: -webkit-box;
@@ -1826,7 +1826,7 @@ body.offcanvas-open {
   background: #252525;
 }
 .footer-area .footer-top {
-  padding: 60px 0 55px 0;
+  padding: 40px 0 40px 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .footer-area .footer-top {
@@ -1880,7 +1880,7 @@ body.offcanvas-open {
   color: #eaaa85;
 }
 .footer-area .footer-top .single-wedge .footer-links p {
-  margin: 0 0 25px;
+  margin: 0 0 15px;
   font-weight: 400;
   color: #a1a1a1;
 }
