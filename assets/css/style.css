@@ -4636,26 +4636,20 @@ Pages - My Account
   justify-content: center;
   margin-bottom: 40px;
 }
-.login-register-wrapper .login-register-tab-list a {
-  position: relative;
-}
-.login-register-wrapper .login-register-tab-list a:before {
-  background-color: #000;
-  bottom: 5px;
-  content: "";
-  height: 18px;
-  margin: 0 auto;
-  position: absolute;
-  right: -2px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  width: 1px;
-}
 .login-register-wrapper .login-register-tab-list a:hover h4 {
   color: #eaaa85 !important;
 }
 .login-register-wrapper .login-register-tab-list a h4 {
   font-size: 25px;
+  font-weight: 500;
+  margin: 0 20px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #000000;
+}
+.login-register-wrapper .login-register-tab-list a h4:hover {
+  font-size: 28px;
   font-weight: 500;
   margin: 0 20px;
   text-transform: capitalize;
