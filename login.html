@@ -290,10 +290,11 @@
                                                     <input type="checkbox" />
                                                     <a class="flote-none" href="javascript:void(0)">Remember me</a>
                                                     <!-- forgot-password.html -->
-                                                    <a href="#" onclick="forgotPassword();">Forgot Password?</a>
+                                                    <a href="#" onclick="forgotPassword(event);">Forgot Password?</a>
                                                 </div>
                                                 <script>
-                                                    const forgotPassword = () => {
+                                                    const forgotPassword = (event) => {
+                                                        event.preventDefault();
                                                         document.getElementById("forgot-passwd").click();
                                                         document.getElementById("forgot-passwd").style.display = 'block';
                                                         // document.getElementById("lg").style.display = 'none';

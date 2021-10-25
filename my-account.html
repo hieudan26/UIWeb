@@ -281,11 +281,12 @@
                     <div class="tab-content dashboard_content" data-aos="fade-up" data-aos-delay="200">
                         <div class="tab-pane fade show active" id="dashboard">
                             <h4>Dashboard </h4>
-                            <p role="tablist">From your account dashboard. you can easily check &amp; view your <a onclick="onTab('Orders')" href="#orders">recent
-                                    orders</a>, manage your <a onclick="onTab('Address')" href="#">shipping and billing addresses</a> and <a
-                                    onclick="onTab('changePassword')" href="#">Edit your password </a> and <a onclick="onTab('UpdateIn4')" href="#">account details.</a></p>
+                            <p role="tablist">From your account dashboard. you can easily check &amp; view your <a onclick="onTab(event, 'Orders')" href="#orders">recent
+                                    orders</a>, manage your <a onclick="onTab(event, 'Address')" href="#">shipping and billing addresses</a> and <a
+                                    onclick="onTab(event, 'changePassword')" href="#">Edit your password </a> and <a onclick="onTab(event, 'UpdateIn4')" href="#">account details.</a></p>
                             <script>
-                                const onTab = (clsName) => {
+                                const onTab = (event, clsName) => {
+                                    event.preventDefault();
                                     document.getElementById(clsName).click();
                                 }
                             </script>
