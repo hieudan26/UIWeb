@@ -9353,6 +9353,7 @@ Pages - My Account
 }
 
 .color-block {
+  border-radius: 5px;
   float: left;
   position: relative;
   width: 100%;
