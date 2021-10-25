@@ -268,11 +268,14 @@
                 <div class="col-lg-7 col-md-12 ml-auto mr-auto">
                     <div class="login-register-wrapper">
                         <div class="login-register-tab-list nav">
-                            <a class="active" data-bs-toggle="tab" href="#lg1">
+                            <a onclick="lg_regClick();" id="lg" class="active" data-bs-toggle="tab" href="#lg1">
                                 <h4>login</h4>
                             </a>
-                            <a data-bs-toggle="tab" href="#lg2">
+                            <a onclick="lg_regClick();" id="reg" data-bs-toggle="tab" href="#lg2">
                                 <h4>register</h4>
+                            </a>
+                            <a id="forgot-passwd" data-bs-toggle="tab" href="#lg3" style="display: none;">
+                                <h4>forgot password</h4>
                             </a>
                         </div>
                         <div class="tab-content">
@@ -286,8 +289,23 @@
                                                 <div class="login-toggle-btn">
                                                     <input type="checkbox" />
                                                     <a class="flote-none" href="javascript:void(0)">Remember me</a>
-                                                    <a href="forgot-password.html">Forgot Password?</a>
+                                                    <!-- forgot-password.html -->
+                                                    <a href="#" onclick="forgotPassword();">Forgot Password?</a>
                                                 </div>
+                                                <script>
+                                                    const forgotPassword = () => {
+                                                        document.getElementById("forgot-passwd").click();
+                                                        document.getElementById("forgot-passwd").style.display = 'block';
+                                                        // document.getElementById("lg").style.display = 'none';
+                                                        // document.getElementById("reg").style.display = 'none';
+                                                    }
+
+                                                    const lg_regClick = () => {
+                                                        if (document.getElementById("forgot-passwd").style.display === 'block') {
+                                                            document.getElementById("forgot-passwd").style.display = 'none';
+                                                        }
+                                                    }
+                                                </script>
                                                 <button type="submit"><span>Login</span></button>
                                             </div>
                                         </form>
@@ -301,8 +319,26 @@
                                             <input name="user-email" placeholder="Email" type="email" />
                                             <input type="password" name="user-password" placeholder="Password" />
                                             <input type="password" name="user-retype_password" placeholder="Retype password" />
-                                            <div class="button-box">
+                                            <div class="button-box" style="text-align: center;">
                                                 <button type="submit"><span>Register</span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="lg3" class="tab-pane">
+                                <div class="login-form-container">
+                                    <div class="login-register-form">
+                                        <form action="#" method="post">
+                                            <input name="user-email" placeholder="Email" type="email" />
+                                            <input type="password" name="user-password" placeholder="Password" />
+                                            <input type="password" name="user-retype_password" placeholder="Retype password" />
+                                            <div class="button-box" style="text-align: center;">
+                                                <div class="login-toggle-btn">
+                                                    <input type="checkbox" />
+                                                    <a class="flote-none" href="javascript:void(0)">Remember me</a>
+                                                </div>
+                                                <button type="submit"><span>Reset</span></button>
                                             </div>
                                         </form>
                                     </div>
@@ -344,8 +380,9 @@
                                             name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
                                     </div>
                                     <div class="clear">
-                                        <button id="mc-embedded-subscribe" class="button" type="submit" name="subscribe"
-                                            value=""> Submit</button>
+                                        <!-- submit -->
+                                        <button id="mc-embedded-subscribe" class="button" type="button" name="subscribe"
+                                            value="" onclick="window.location.href='./404.html'"> Submit</button>
                                     </div>
                                 </div>
                             </form>

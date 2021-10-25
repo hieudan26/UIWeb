@@ -266,12 +266,13 @@
             <div class="row">
                 <div class="col-lg-6 col-sm-12 col-xs-12 mb-lm-30px mb-md-30px mb-sm-30px">
                     <!-- Swiper -->
-                    <div class="swiper-container zoom-top">
+                    <div class="swiper-slide zoom-image-hover">
+                        <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/1.jpg"
+                            alt="">
+                    </div>
+                    <!-- <div class="swiper-container zoom-top">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide zoom-image-hover">
-                                <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/1.jpg"
-                                    alt="">
-                            </div>
+                            
                             <div class="swiper-slide zoom-image-hover">
                                 <img class="img-responsive m-auto" src="assets/images/product-image/zoom-image/2.jpg"
                                     alt="">
@@ -289,8 +290,8 @@
                                     alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-container mt-20px zoom-thumbs ">
+                    </div> -->
+                    <!-- <div class="swiper-container mt-20px zoom-thumbs ">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img class="img-responsive m-auto" src="assets/images/product-image/small-image/1.jpg"
@@ -313,7 +314,7 @@
                                     alt="">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-6 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="200">
                     <div class="product-details-content quickview-content ml-25px">
@@ -338,7 +339,35 @@
                             <span class="avallabillty">Availability: <span class="in-stock"><i
                                         class="fa fa-check"></i>In Stock</span></span>
                         </div>
-                        <p class="mt-30px mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+
+                        <div class="color-group mt-30px">
+                            <a id="color-1" href="#" class="color-block bg-warning" onclick="onClickColor(event, this.id);"></a>
+
+                            <a id="color-2" href="#" class="color-block bg-danger" onclick="onClickColor(event, this.id);"></a>
+
+                            <a id="color-3" href="#" class="color-block bg-success" onclick="onClickColor(event, this.id);"></a>
+
+                            <a id="color-4" href="#" class="color-block bg-info" onclick="onClickColor(event, this.id);"></a>
+
+                            <a id="color-5" href="#" class="color-block bg-dark" onclick="onClickColor(event, this.id);"></a>
+                        </div>
+
+                        <script>
+                            const onClickColor = (event, idColor) => {
+                                event.preventDefault();
+                                for (var i = 1; i <= 5; i++) {
+                                    var temp = "color-" + i;
+                                    if (temp === idColor) {
+                                        document.getElementById(temp).style.transform = "scale(1.3,1.3)"
+                                    }
+                                    else {
+                                        document.getElementById(temp).style.transform = "scale(1,1)";
+                                    }
+                                }
+                            }
+                        </script>
+
+                        <p class="mt-20px mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                             eiusmodol tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni nostrud
                             exercitation ullamco laboris </p>
                         <div class="pro-details-quality">
@@ -839,8 +868,9 @@
                                             name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef">
                                     </div>
                                     <div class="clear">
-                                        <button id="mc-embedded-subscribe" class="button" type="submit" name="subscribe"
-                                            value=""> Submit</button>
+                                        <!-- submit -->
+                                        <button id="mc-embedded-subscribe" class="button" type="button" name="subscribe"
+                                            value="" onclick="window.location.href='./404.html'"> Submit</button>
                                     </div>
                                 </div>
                             </form>

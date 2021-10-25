@@ -4636,26 +4636,24 @@ Pages - My Account
   justify-content: center;
   margin-bottom: 40px;
 }
-.login-register-wrapper .login-register-tab-list a {
-  position: relative;
-}
-.login-register-wrapper .login-register-tab-list a:before {
-  background-color: #000;
-  bottom: 5px;
-  content: "";
-  height: 18px;
-  margin: 0 auto;
-  position: absolute;
-  right: -2px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  width: 1px;
-}
 .login-register-wrapper .login-register-tab-list a:hover h4 {
   color: #eaaa85 !important;
 }
 .login-register-wrapper .login-register-tab-list a h4 {
   font-size: 25px;
+  font-weight: 500;
+  margin: 0 20px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #000000;
+}
+.login-register-wrapper .login-register-tab-list a h4:hover {
+  transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
   font-weight: 500;
   margin: 0 20px;
   text-transform: capitalize;
@@ -9338,4 +9336,26 @@ Pages - My Account
     padding-bottom: 0;
     border-radius: 0;
   }
+}
+
+.color-group {
+  width: 5%;
+  display: inline-block;
+  display: -webkit-inline-box;
+}
+
+.color-block {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin: 1px 8px 1px 1px;
+  padding-bottom: 100%;
+}
+
+.color-block:hover {
+  transform: scale(0.75,0.75);
+  -moz-transform: scale(0.75,0.75);
+  -webkit-transform: scale(0.75,0.75);
+  -o-transform: scale(0.75,0.75);
+  -ms-transform: scale(0.75,0.75);
 }
