@@ -3606,6 +3606,14 @@ body.offcanvas-open {
 .cart-main-area .table-content table tbody > tr td.product-thumbnail {
   width: 150px;
 }
+.cart-main-area .table-content table tbody > tr td.product-color {
+  width: 435px;
+}
+.cart-main-area .table-content table tbody > tr td.product-color a {
+  color: #474747;
+  font-size: 16px;
+  font-weight: 500;
+}
 .cart-main-area .table-content table tbody > tr td.product-name {
   width: 435px;
 }
