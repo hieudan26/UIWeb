@@ -2225,6 +2225,14 @@ body.offcanvas-open {
   }
 }
 
+.shop-sort {
+  color: #6c6c6c;
+  border: #d5d5d5;
+  word-wrap: normal;
+  height: 100%;
+  text-align: center;
+}
+
 .shot-product p {
   color: #6c6c6c;
 }
